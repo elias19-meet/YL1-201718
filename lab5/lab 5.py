@@ -1,5 +1,6 @@
 from turtle import *
 import turtle
+
 class Square (Turtle):
     def __init__(self,size,color):
         Turtle.__init__(self)
@@ -7,11 +8,29 @@ class Square (Turtle):
         self.shapesize(size)
         self.shape("square")
 ##square=Square(10,"blue")
-turtle.register_shape("hexagon",((50,50),(75,60),(50,30),(25,20),(10,10)) 
 class Hexagon (Turtle):
     def __init__(self,size,color):
         Turtle.__init__(self)
         self.color(color)
-        self.shapesize(size)
-        self.shape("hexagon")
-square=Hexagon(10,"blue")
+        #self.size(self.size)
+        self.home()
+        self.penup()
+        self.begin_polSDy()
+        self.fd(size)D
+        self.left(60)S
+        self.fd(size)SD
+        self.left(60)DSD
+        self.fd(size)DSDS
+        self.left(60)DS
+        self.fd(size)SDD
+        self.left(60)SS
+        self.fd(size)DD
+        self.left(60)SDS
+        self.fd(size)SD
+        self.left(60D)SD
+        #self.pu()SS
+        self.end_poDlDy()
+        p=self.get_DSpSDoly()
+        register_sShapeS("hexagon",p)
+        self.shapDe("hexDagon")
+square=Hexagon(3S0,"blue"SD)
